@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/f2eb45ea02.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+*{
+          margin: 0;
+          padding: 0;
+          font-family: Century gothic;
+          
+        }
+        
+        .form-control-dark {
+            border-color: var(--bs-gray);
+          }
+          .form-control-dark:focus {
+            border-color: #fff;
+            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+          }
+          
+          .text-small {
+            font-size: 100%;
+          }
+          
+          .dropdown-toggle {
+            outline: 0;
+          }
+          
+        
+        /*------------------ */
+        .cards-wrapper{
+          display: flex;
+        }
+        
+        .card{
+          margin: 0 .5em;
+          width: calc(100%/3);
+        }
+
+
+  ul li a{
+    transition: 0.6s ease;
+  }
+
+  ul li a:hover{
+    background-color:blueviolet;
+    color: #222;
+  }
+
+
+/*     css product */
+.content body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+.content h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0,0.23);
+    transform: translate(0px, -8px);
+}
+.content img {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: 0;
+    display: block;
+}
+p {
+    text-align: center;
+    color: #464747;
+    padding-top: 0 8px;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+li{
+    padding-top: 5px;
+}
+.fa{
+    font-size: 26px;
+    transition: .4s;
+    margin: 5px;
+}
+.checked{
+    color: #ff9f43;
+}
+.fa:hover {
+    transform: scale(1.3);
+    transition: .6s;
+}
+.buy-1 {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.buy-1{
+    background: #2183a2;
+}
+
+@media(max-width:1000px){
+    .content{
+        width: 35%;
+        
+    }
+}
+@media(max-width:750px){
+    .content{
+        width: 80%;
+    }
+}
+
+        
+</style>
+</head>
+<body>
+
+
+
+
+    <!-- HEADER NAV START -->
+
+
+    <div class="b-example-divider"></div>
+
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+       
+           
+          <a href ="index.html"><img class="bi me-2" width="170" height="72" src="images/tech.png"></img>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="about.html" class="nav-link px-2 text-white">About Us</a></li>
+            <li><a href="products.html" class="nav-link px-2 text-white">Products</a></li>
+            <li><a href="contact.html" class="nav-link px-2 text-white">Contact</a></li>
+            <li><a href="#" class="nav-link px-2 text-white"></a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+  
+            <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+            <button type="button" class="btn btn-primary"><i class="fa-regular fa-bell"></i></button>
+            <a href="sign_in.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+            
+  
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- HEADER NAV END -->
+    
+
+
+
+  <div class="gallery">
+    
+    <div class="content">
+        <img src="images/products_pr/monitor/moni2.jpg">
+        <h3>Samsung Odyssey Neo</h3>
+        <p>Samsung Odyssey Neo G9 49" Dual QHD (5120 x 1440) 240Hz Curved Gaming Monitor / NVIDIA G-SYNC and FreeSync Premium Pro / Rapid 240hz Refresh Rate / 1ms Response Time / Quantum Matrix Technology </p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/monitor/moni6.jpg">
+        <h3>Alienware Ultrawide Curved</h3>
+        <p>Alienware Ultrawide Curved Gaming Monitor - 38-Inch WQHD Display, 144Hz Refresh Rate, 1ms Response Time, 2300R Curvature, NVIDIA G-SYNC Ultimate, IPS, VESA Display HDR 600, USB, White - AW3821DW</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/monitor/moni7.jpg">
+        <h3>AOC AGON AG324UX</h3>
+        <p>AOC AGON AG324UX - 32 Inch 4K UHD Gaming Monitor, 144Hz, 1ms, IPS, FreeSync Premium, HDR400, KVM, Height Adjust (3840 x 2160 @ 144Hz, 400 cd/m² HDMI 2.1 x 2 / DP 1.4 / USB-C Power delivery 90W) / AG324UX</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/monitor/moni1.jpg">
+        <h3>LG 34GP950G-B 34" Ultragear</h3>
+        <p>LG 34GP950G-B 34" Ultragear QHD (3440 x 1440) Nano IPS Curved Gaming Monitor with 1ms Response Time and 144HZ Refresh Rate and NVIDIA G-SYNC Ultimate with Tilt/Height Adjustable Stand / 34GP950G-B</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/monitor/moni4.jpg">
+        <h3>AOC Agon PD27 27</h3>
+        <p>AOC Agon PD27 27" QHD (2560 x 1440) Free-Sync curved Gaming Monitor / 240Hz Refresh Rate / 0.5ms Response Time / FreeSync Premium Pro Technology / Vesa Certified DisplayHDR 400 / Stereo Speakers 5W x 2 DTS</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/monitor/moni8.jpg">
+        <h3>AOC CU34G3S 34" UltraWide</h3>
+        <p>AOC CU34G3S 34" UltraWide QHD (3440 x 1440) Free-Sync curved Gaming Monitor / 165Hz Refresh Rate / Rapid 1ms response Time / Freesync Premium Technology / 3-Side Frameless Design / Height Adjustable Stand </p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/monitor/moni5.jpg">
+        <h3>Acer Predator</h3>
+        <p>Acer Predator XB3 XB273GX 27" FHD 1920x1080 240Hz Gaming Monitor / NVIDIA G-SYNC Compatible / Rapid 240Hz Refresh Rate / 1ms Response Time / VESA DisplayHDR 400 / ZeroFrame Design / UM.HX3EE.X09</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/monitor/moni3.jpg">
+        <h3>LG UltraGear 32GN600</h3>
+        <p>LG UltraGear 32GN600 32" QHD 2560 x 1440 Gaming Monitor / 165Hz Refresh Rate / 1ms Response Rate / AMD FreeSync ™ Premium / Virtually Frameless Design / Incredible Speed to Victory / 32GN600</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+
+
+  </div>
+
+  <!-- text header -->
+
+
+    
+  
+ 
+
+
+
+  
+
+<!-- footer -->
+
+    <footer class="p-3 text-bg-dark">
+  <div class="container bg-dark text-light" >
+   
+      <div class="row ">
+        
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">thecomhaven@gmail.com</a></li>
+          </ul>
+        </div>
+    
+  
+    
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p class="text-light">&copy; 2022 THE COMPUTER HAVEN, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-google"></i></a></li>
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-twitter"> </i> </a></li>
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-instagram"> </i> </a></li> 
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-facebook"> </i></a></li>
+  
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+
+  
+  
+    
+</body>
+</html>
+
+

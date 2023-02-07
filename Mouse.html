@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/f2eb45ea02.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+    *{
+          margin: 0;
+          padding: 0;
+          font-family: Century gothic;
+          
+        }
+        
+        .form-control-dark {
+            border-color: var(--bs-gray);
+          }
+          .form-control-dark:focus {
+            border-color: #fff;
+            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+          }
+          
+          .text-small {
+            font-size: 100%;
+          }
+          
+          .dropdown-toggle {
+            outline: 0;
+          }
+          
+        
+        /*------------------ */
+        .cards-wrapper{
+          display: flex;
+        }
+        
+        .card{
+          margin: 0 .5em;
+          width: calc(100%/3);
+        }
+
+
+  ul li a{
+    transition: 0.6s ease;
+  }
+
+  ul li a:hover{
+    background-color:blueviolet;
+    color: #222;
+  }
+
+
+/*     css product */
+.content body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+.content h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0, 0, 0,0.23);
+    transform: translate(0px, -8px);
+}
+.content img {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: 0;
+    display: block;
+}
+p {
+    text-align: center;
+    color: #464747;
+    padding-top: 0 8px;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+li{
+    padding-top: 5px;
+}
+.fa{
+    font-size: 26px;
+    transition: .4s;
+    margin: 5px;
+}
+.checked{
+    color: #ff9f43;
+}
+.fa:hover {
+    transform: scale(1.3);
+    transition: .6s;
+}
+.buy-1 {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.buy-1{
+    background: #2183a2;
+}
+
+@media(max-width:1000px){
+    .content{
+        width: 35%;
+        
+    }
+}
+@media(max-width:750px){
+    .content{
+        width: 80%;
+    }
+}
+
+        
+</style>
+</head>
+<body>
+
+
+
+
+    <!-- HEADER NAV START -->
+
+
+    <div class="b-example-divider"></div>
+
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+       
+           
+          <a href ="index.html"><img class="bi me-2" width="170" height="72" src="images/tech.png"></img>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="about.html" class="nav-link px-2 text-white">About Us</a></li>
+            <li><a href="products.html" class="nav-link px-2 text-white">Products</a></li>
+            <li><a href="contact.html" class="nav-link px-2 text-white">Contact</a></li>
+            <li><a href="#" class="nav-link px-2 text-white"></a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+  
+            <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+            <button type="button" class="btn btn-primary"><i class="fa-regular fa-bell"></i></button>
+            <a href="sign_in.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+            
+  
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- HEADER NAV END -->
+    
+
+
+  <div class="gallery">
+        <div class="content">
+        <img src="images/products_pr/mouse/mouse1.jpg">
+        <h3>Glorious Model</h3>
+        <p>Glorious Model D Wireless Worlds Lightest RGB Gaming Mouse (Matte Black Edition) / Max DPI 19,000 / Glorious BAMF Sensor / Battery Life up to 71 Hours / 2.4 Ghz Lag-Free Wireless</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/mouse/mouse6.jpg">
+        <h3>Razer Basilisk </h3>
+        <p>Razer Basilisk Ultimate Hyperspeed Wireless Gaming Mouse / Razer Focus+ Optical Sensor / Wired and Wireless usage modes / True 20,000 DPI / 11 programmable buttons / Charging Dock</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/mouse/mouse4.jpg">
+        <h3>Logitech G502</h3>
+        <p>Logitech G502 X PLUS LIGHTSPEED Wireless RGB Gaming Mouse - Optical Mouse with LIGHTFORCE Hybrid Switches, LIGHTSYNC RGB, HERO 25K Gaming Sensor, Compatible with PC</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/mouse/mouse7.jpg">
+        <h3>SteelSeries Aerox 9</h3>
+        <p>SteelSeries Aerox 9 Wireless – Ultra-Lightweight Wireless Gaming Mouse – 18000 CPI – TrueMove Air Optical Sensor - Water Resistant– 180 Hour Battery – 18 Programmable Buttons</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/mouse/mouse8.jpg">
+        <h3>MARVO M209</h3>
+        <p>MARVO M209 Optical Gaming Mouse / Supports up to 6400 DPI / 7 Colors Backlight / 6 Buttons / Backlit Rubber Scroll Wheel / 3 Million Clicks / Quick 4-step DPI Selection Button / MARVO M209</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/mouse/mouse3.jpg">
+        <h3>Mad Catz</h3>
+        <p>Mad Catz The Authentic R.A.T. PRO X3 Gaming Mouse - Black / Up To 16000 DPI / Chameleon RGB Lighting / Onboard Profile Memory / Revolutionary Scroll Wheel / Pixart PMW 3389 Optical Sensor</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/mouse/mouse5.jpg">
+        <h3>Corsair IRONCLAW</h3>
+        <p>Corsair IRONCLAW RGB Wireless Optical Gaming Mouse - Black / Pixart PMW3391 Sensor / Battery Up to 16hrs with Standard Lighting / Native 18,000 DPI Adjustable / High-Performance Omron</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+    <div class="content">
+        <img src="images/products_pr/mouse/mouse2.jpg">
+        <h3>ASUS ROG Chakram</h3>
+        <p>ASUS ROG Chakram RGB Wireless Gaming Mouse / Tri-mode Connectivity / Qi-compatible Charging Surface / Advanced 16000 dpi Sensor / Screw-less Magnetic Design / Armoury II Interface</p>
+        <h6>$99.99</h6>
+        <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+        </ul>
+        <button class="buy-1">Buy Now</button>
+    </div>
+
+
+
+  </div>
+
+  <!-- text header -->
+
+
+    
+
+<!-- footer -->
+
+<footer class="p-3 text-bg-dark">
+  <div class="container bg-dark text-light" >
+   
+      <div class="row ">
+        
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">thecomhaven@gmail.com</a></li>
+          </ul>
+        </div>
+    
+  
+    
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p class="text-light">&copy; 2022 THE COMPUTER HAVEN, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-google"></i></a></li>
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-twitter"> </i> </a></li>
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-instagram"> </i> </a></li> 
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-facebook"> </i></a></li>
+  
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+  
+  
+    
+</body>
+</html>
+
+

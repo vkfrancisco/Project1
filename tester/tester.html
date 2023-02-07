@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+
+    <script src="https://kit.fontawesome.com/f2eb45ea02.js" crossorigin="anonymous"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+
+
+
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Century gothic;
+}
+
+.form-control-dark {
+	border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+	border-color: #fff;
+	box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+  .text-small {
+	font-size: 100%;
+  }
+  
+  .dropdown-toggle {
+	outline: 0;
+  }
+
+  ul li a{
+    transition: 0.6s ease;
+  }
+
+  ul li a:hover{
+    background-color:blueviolet;
+    color: #222;
+  }
+  
+
+/*--------carousel---------- */
+.cards-wrapper{
+  display: flex;
+}
+
+.card{
+  margin: 0 .5em;
+  width: calc(100%/3);
+}
+
+.image-wrapper{
+  height: 22vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+
+}
+
+.image-wrapper img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    
+
+    <!-- header -->
+
+    <div class="b-example-divider"></div>
+
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+       
+           
+          <a href ="index.html"><img class="bi me-2" width="170" height="72" src="LOGO.png"></img>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="about.html" class="nav-link px-2 text-white">About Us</a></li>
+            <li><a href="products.html" class="nav-link px-2 text-white">Products</a></li>
+            <li><a href="contact.html" class="nav-link px-2 text-white">Contact</a></li>
+            <li><a href="#" class="nav-link px-2 text-white"></a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+  
+            <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+            <button type="button" class="btn btn-primary"><i class="fa-regular fa-bell"></i></button>
+            <a href="sign_up.html"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+            
+  
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- header end -->
+
+
+
+
+
+
+<!-- PC BUILD START  -->
+
+<h1 class="visually-hidden">Heroes examples</h1>
+
+  <div class="px-4 py-5 text-center bg-dark">
+
+    <h1 class="display-5 fw-bold text-light ">PC BUILDS</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 text-light">Choose PC builds base on your usage</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- carousel -->
+
+<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="Unit1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">RYZEN</h5>
+                <p class="card-text">AMD Ryzen™ 7-3700X Processor (3.6 - 4.4GHz)/ 512GB SSD storage with 16GB RAM / NVIDIA® GeForce RTX™3070 8GB DDR6 / 1 x HDMI port / 8 x USB-A ports / Bluetooth v5.2 / Wi-Fi 6 / Windows Home 11 operating system</p>
+                <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+      
+        <div class="card" >
+<img src="Unit2.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">HP/DELLE</h5>
+    <p class="card-text">7020/600 G1 / Hard Drive Capacity	500GB / Operating System WINDOWS 10 PRO / Screen Size	18.5"/ Processor i3/i5/i7/ Memory Size	4GB / BLACK / LED /	INTEL / WI-FI Adaptor</p>
+    <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+
+<div class="card" >
+<img src="Unit3.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">ASUS ROG</h5>
+    <p class="card-text">ASUS ROG Strix GA15DK Gaming Desktop PC, AMD Ryzen 7 5800X, GeForce RTX 3070, 16GB DDR4 RAM, 1TB SSD, Wi-Fi 5, Windows 10 Home, GA15DK-DS776</p>
+    <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="cards-wrapper">
+<div class="card" >
+<img src="Unit4.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">Intel</h5>
+    <p class="card-text">Intel Core i7-9700K Processor (12M Cache, up to 4.90 GHz) / DDR4 16GB (8GB*2) / 1TB 2.5-in 7200rpm HDD + 512GB M.2 NVME PCIE SSD / NVIDIA GeForce RTX2080 8GB GDDR6 / Windows 10 Home</p>
+    <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+
+<div class="card" >
+<img src="Unit5.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">DeskMini GTX/RX</h5>
+    <p class="card-text">Supports Intel® 7th Core™ / Pentium® / Celeron® LGA1151 processors / Discrete MXM slots with Type A/B/B+, up to GeForce GTX1080 / Dual DDR4 SO-DIMMs, up to 32GB / 4K@60Hz video outputs: HDMI, DisplayPort, mini DisplayPort / Up to 3 x Ultra M.2 PCIe Gen3 x4 Slots / Supports Intel® Optane™ Technology / USB 3.1 Gen1 type-C port / Brand new Micro STX platform / 2.7 Liter tiny size</p>
+    <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+
+
+<div class="card" >
+<img src="Unit6.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">GigaByte</h5>
+    <p class="card-text">Compatiable with Project Stealth series / Full-Size 4mm Tempered Glass Side Panel / With HDMI and USB 3.1 Gen2 Type-C on I/O Panel / RGB Fusion 2.0 - Synchronize RGB Lighting with other AORUS Devices / Support Vertical and Horizontal VGA Installation / Liquid Cooling Compatible / PSU Shroud Design / Detachable Dust Filter</p>
+    <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+<!-- PC BUILDS END  -->
+
+
+
+
+
+
+<!-- PC PARTS -->
+
+
+<h1 class="visually-hidden">Heroes examples</h1>
+
+  <div class="px-4 py-5 my-1 text-center bg-dark">
+
+    <h1 class="display-5 fw-bold text-light ">PC PARTS</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 text-light">Choose the important parts of computer for you to improve your experience.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- carousel -->
+
+<div id="carouselExampleControls1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="1CPU.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><center><b>Central Processing Unit</b></center></h5>
+              <p class="card-text">The central processing unit (CPU) is the computer component that's responsible for interpreting and executing most of the commands from the computer's other hardware and software.</p>
+              <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+      
+        <div class="card" >
+<img src="1MOTHERBOARD.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title"><center><b>Motherboard</b></center></h5>
+  <p class="card-text">a printed circuit board containing the principal components of a computer or other device, with connectors into which other circuit boards can be slotted.</p>
+  <center><a href="MotherBoard.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+
+<div class="card" >
+<img src="1RAM.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title"><center><b>Random Access Memory</b></center></h5>
+  <p class="card-text">RAM (random access memory) is a computer's short-term memory, where the data that the processor is currently using is stored.</p>
+  <center><a href="ram.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="cards-wrapper">
+<div class="card" >
+<img src="1GPU.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title"><center><b>Graphic Processing Unit</b></center></h5>
+  <p class="card-text">The graphics processing unit, or GPU, has become one of the most important types of computing technology, both for personal and business computing</p>
+  <center><a href="GPU.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+
+<div class="card" >
+<img src="1PSU.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title"><center><b>Power Supply</b></center></h5>
+  <p class="card-text">The power supply unit is the piece of hardware that converts the power provided from the outlet into usable power for the many parts inside the computer case.</p>
+  <center><a href="PSU.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+
+
+<div class="card" >
+<img src="1STORAGE.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title"><center><b>HDD And SDD</b></center></h5>
+  <p class="card-text">Storage is a process through which digital data is saved within a data storage device by means of computing technology. Storage is a mechanism that enables a computer to retain data, either temporarily or permanently</p>
+  <center><a href="storage.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+<!-- PC PARTS END -->
+
+  <div class="px-4 py-5 my-1 text-center bg-dark">
+
+    <h1 class="display-5 fw-bold text-light ">PERIPHERALS</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 text-light">Choose good quality peripherals you want.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- carousel -->
+
+<div id="carouselExampleControls2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="cards-wrapper">
+        <div class="card">
+          <img src="1KEYBOARD.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title"><center><b>Keyboard</b></center></h5>
+            <p class="card-text">The keyboard is the piece of computer hardware used to input text, characters, and other commands into a computer or similar device.</p>
+            <center><a href="KeyBoard.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+      
+        <div class="card" >
+<img src="1MOUSE.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title"><center><b>Mouse</b></center></h5>
+    <p class="card-text">The mouse, sometimes called a pointer, is a hand-operated input device used to manipulate objects on a computer screen.</p>
+    <center><a href="Mouse.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+
+<div class="card" >
+<img src="1MONITOR.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title"><center><b>Monitor</b></center></h5>
+    <p class="card-text">A monitor is a piece of computer hardware that displays the video and graphics information generated by a connected computer through the computer's video card.</p>
+    <center><a href="Monitor.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="cards-wrapper">
+<div class="card" >
+<img src="1SPEAKER.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title"><center><b>Speaker</b></center></h5>
+     <p class="card-text">Computer speakers are devices that allow you to listen to audio content while you work.</p>
+    <center><a href="cpu.html" class="btn btn-primary">View More</a></center>>
+</div>
+</div>
+
+<div class="card" >
+<img src="1PRINTER.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title"><center><b>Printer</b></center></h5>
+    <p class="card-text">A printer is an external hardware output device that takes the electronic data stored on a computer or other device and generates a hard copy.</p>
+    <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+
+
+<div class="card" >
+<img src="1WEBCAM.png" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title"><center><b>Webcam</b></center></h5>
+    <p class="card-text">A webcam is a digital camera that’s connected to a computer to stream live video in real time.</p>
+    <center><a href="cpu.html" class="btn btn-primary">View More</a></center>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+
+
+<br>
+
+
+
+
+
+
+<!-- footer -->
+
+<footer class="p-3 text-bg-dark">
+  <div class="container bg-dark text-light" >
+   
+      <div class="row ">
+        
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">thecomhaven@gmail.com</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Quick links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-light">Home</a></li>
+            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-light">About</a></li>
+            <li class="nav-item mb-2"><a href="products.html" class="nav-link p-0 text-light">Products</a></li>
+            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-light">Contact Us</a></li>
+          </ul>
+        </div>
+  
+      
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2022 THE COMPUTER HAVEN, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-google"></i></a></li>
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-twitter"> </i> </a></li>
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-instagram"> </i> </a></li> 
+  
+          <li class="ms-3"><a class="link-light" href="#"><svg class="bi" width="24" height="24"> </svg> <i class="fa fa-facebook"> </i></a></li>
+  
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+    <!-- footer end -->
+
+
+
+
+
+
+
+
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+      <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>
